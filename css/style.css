@@ -1849,4 +1849,134 @@ form label {
 .datesize{
     
 }
+
+#fh5co-header {
+    position: relative;
+    overflow: hidden;
+}
+.header-slider {
+    position: absolute;
+    top: 0; left: 0; width: 300vw;
+    height: 100%;
+    display: flex;
+    transition: transform 1s cubic-bezier(.77,0,.18,1);
+    z-index: 1;
+}
+.header-slider .slide {
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+#fh5co-header .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 2;
+}
+#fh5co-header .container,
+#fh5co-header .row,
+#fh5co-header .display-t,
+#fh5co-header .display-tc {
+    position: relative;
+    z-index: 3;
+}
+
+#fh5co-event .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px; /* Adjust as needed for spacing */
+}
+
+#fh5co-event .col-lg-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+#fh5co-event img {
+    width: 100%;
+    max-width: 350px; /* or 400px for the middle image if you want */
+    height: auto;
+    border-radius: 12px; /* optional, for rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* optional, for subtle shadow */
+}
+
+.margin-event {
+    margin-left: initial;
+}
+
+.falling-heart {
+    position: fixed;
+    top: -50px;
+    z-index: 9999;
+    color: #ff0000;
+    pointer-events: none;
+    animation: fall-heart linear forwards;
+    opacity: 0.8;
+}
+
+@keyframes fall-heart {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.2;
+    }
+}
+
+.wedding-date {
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 768px) {
+    .wedding-date {
+        font-size: 2rem;
+    }
+}
+
+.heart-lower {
+    position: relative;
+    top: 0.1em;
+}
+
+#music-control {
+    position: fixed;
+    bottom: 48px;
+    left: 24px;
+    z-index: 9999;
+    background: rgba(255,255,255,0.85);
+    border-radius: 50%;
+    width: 70px; /* Increased from 48px */
+    height: 70px; /* Increased from 48px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#music-control:hover {
+    background: #DC143C;
+}
+#music-control i {
+    font-size: 38px;     /* Increased from 24px */
+    color: #DC143C;
+    transition: color 0.2s;
+}
+#music-control.playing {
+    background: #DC143C;
+}
+#music-control.playing i {
+    color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

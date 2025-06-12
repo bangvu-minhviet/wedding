@@ -111,7 +111,12 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5" style="position:relative; overflow:hidden;">
+		<div class="header-slider">
+			<div class="slide" style="background-image:url('images/img_bg_1.jpg');"></div>
+			<div class="slide" style="background-image:url('images/img_bg_2.jpg');"></div>
+			<div class="slide" style="background-image:url('images/img_bg_3.jpg');"></div>
+		</div>
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -119,8 +124,8 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<div class="move-bot">
-								<h1>Bằng Vũ <i class="icon-heart2" style="color: #FFC0CB; "></i> Minh Việt</h1>
-								<p class="h1" style="color: white"; >13 - 07 - 2025</p>
+								<h1>Bằng Vũ <i class="icon-heart2 heart-lower" style="color: #DC143C; "></i> Minh Việt</h1>
+								<p class="wedding-date">13 &mdash; 07 &mdash; 2025</p>
 							</div>
 						</div>
 					</div>
@@ -167,8 +172,8 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<h2>Sự Kiện Cưới</h2>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box margin-event">
+					<h2>Sự kiện cưới</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -608,7 +613,79 @@
         enableUtc: false
     });
 </script>
+<script>
+$(function() {
+    var total = $('.header-slider .slide').length;
+    var current = 0;
+    setInterval(function() {
+        current = (current + 1) % total;
+        $('.header-slider').css('transform', 'translateX(' + (-current * 100) + 'vw)');
+    }, 5000); // Change every 4 seconds
+});
+</script>
 
+<script>
+	function createHeart() {
+		const heart = document.createElement('div');
+		heart.className = 'falling-heart';
+		heart.innerHTML = '<i class="icon-heart2"></i>'; // Uses your existing icon font
+		heart.style.left = Math.random() * 100 + 'vw';
+		heart.style.animationDuration = (2 + Math.random() * 3) + 's'; // 2-5 seconds
+		heart.style.fontSize = (16 + Math.random() * 32) + 'px'; // 16-48px
+		document.body.appendChild(heart);
+
+		setTimeout(() => {
+			heart.remove();
+		}, 5000);
+	}
+
+	setInterval(createHeart, 400); // Create a heart every 400ms
+</script>
+
+<!-- Audio Player and Control Icon -->
+<audio id="bg-music" src="audio/song.mp3" loop></audio>
+<div id="music-control">
+    <i id="music-icon" class="fas fa-music"></i>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('bg-music');
+    var control = document.getElementById('music-control');
+    var icon = document.getElementById('music-icon');
+    var isPlaying = false;
+
+    // Set initial icon
+    icon.classList.remove('fa-pause-circle');
+    icon.classList.add('fa-music');
+
+    control.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            isPlaying = true;
+            icon.classList.remove('fa-music');
+            icon.classList.add('fa-pause-circle');
+            control.classList.add('playing');
+        } else {
+            audio.pause();
+            isPlaying = false;
+            icon.classList.remove('fa-pause-circle');
+            icon.classList.add('fa-music');
+            control.classList.remove('playing');
+        }
+    });
+
+    // Optional: Pause music when user leaves the page
+    window.addEventListener('blur', function() {
+        if (!audio.paused) {
+            audio.pause();
+            icon.classList.remove('fa-pause-circle');
+            icon.classList.add('fa-music');
+            control.classList.remove('playing');
+        }
+    });
+});
+</script>
 	</body>
 </html>
 

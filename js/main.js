@@ -228,5 +228,13 @@
 		counterWayPoint();
 	});
 
-
+	// Close off-canvas menu when clicking anchor links
+	$(document).on('click', '#fh5co-offcanvas a[href^="#"]', function (e) {
+		// Allow the scroll to section to happen
+		var $body = $('body');
+		if ($body.hasClass('offcanvas')) {
+			$body.removeClass('offcanvas overflow');
+			$('.js-fh5co-nav-toggle').removeClass('active');
+		}
+	});
 }());

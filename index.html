@@ -78,22 +78,42 @@
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
-				</div>
-				<div class="col-xs-10 text-right menu-1">
-					<ul>
-						<li class="active"><a href="#fh5co-header"><i class="fas fa-home"></i></a></li>
-						<li><a href="#fh5co-couple"><i class="fas fa-heart"></i></a></li>
-						<li><a href="#fh5co-services"><i class="fas fa-concierge-bell"></i></a></li>
-						<li><a href="#fh5co-gallery"><i class="fas fa-images"></i></a></li>
-						<li><a href="#fh5co-footer"><i class="fas fa-envelope"></i></a></li>
-					</ul>
+				<div class="col-xs-12 text-right menu-1">
 				</div>
 			</div>
 			
 		</div>
 	</nav>
+
+	<!-- Floating Navigation Menu -->
+	<div class="floating-menu">
+		<!-- Navigation Items (hidden by default) -->
+		<div class="floating-menu-items">
+			<div class="floating-menu-item active" data-target="#fh5co-header">
+				<i class="fas fa-heart"></i>
+			</div>
+			<div class="floating-menu-item" data-target="#fh5co-event">
+				<i class="fas fa-calendar-alt"></i>
+			</div>
+			<div class="floating-menu-item" data-target="#fh5co-location-map">
+				<i class="fas fa-map-marker-alt"></i>
+			</div>
+			<div class="floating-menu-item" data-target="#fh5co-gallery">
+				<i class="fas fa-images"></i>
+			</div>
+			<div class="floating-menu-item" data-target="#fh5co-gift-box">
+				<i class="fas fa-gift"></i>
+			</div>
+			<div class="floating-menu-item" data-target="#fh5co-wishes">
+				<i class="fas fa-comments"></i>
+			</div>
+		</div>
+		
+		<!-- Hamburger Toggle Button -->
+		<div class="floating-menu-toggle" onclick="toggleFloatingMenu()">
+			<i class="fas fa-bars"></i>
+		</div>
+	</div>
 
 	<header id="fh5co-header" class="fh5co-cover" role="banner" data-stellar-background-ratio="0.5" style="position:relative; overflow:hidden;">
 		<div class="header-slider">
@@ -180,55 +200,43 @@
 		</div>
 	</div>
 
-	<div id="fh5co-couple-story">
+	<div id="fh5co-location-map">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>We Love Each Other</span>
-					<h2>Our Story</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<h2>Bản đồ địa điểm</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-1.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">First We Meet</h3>
-									<span class="date">December 25, 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">First Date</h3>
-									<span class="date">December 28, 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box">
-							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">In A Relationship</h3>
-									<span class="date">January 1, 2016</span>
-								</div>
-								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
+					<div class="location-card">
+						<a href="https://maps.app.goo.gl/358ifpMXDJtkwntH8" target="_blank" class="location-heading">
+							Địa chỉ tiệc Nhà Gái - 11/07
+						</a>
+						<div class="qr-code-container">
+							<img src="images/qr-nha-gai.png" alt="QR Code Nhà Gái">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
+					<div class="location-card">
+						<a href="https://maps.app.goo.gl/Dj8E2aHL14ZQc3cU9" target="_blank" class="location-heading">
+							Địa chỉ tiệc Báo Hỷ - 26/07
+						</a>
+						<div class="qr-code-container">
+							<img src="images/qr-bao-hy.png" alt="QR Code Báo Hỷ">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeInUp">
+					<div class="location-card">
+						<a href="https://maps.app.goo.gl/TnzbnnykTg7wB7x59" target="_blank" class="location-heading">
+							Địa chỉ tiệc Nhà Trai - 13/07
+						</a>
+						<div class="qr-code-container">
+							<img src="images/qr-nha-trai.png" alt="QR Code Nhà Trai">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -238,290 +246,151 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Our Memories</span>
 					<h2>Wedding Gallery</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
 					<ul id="fh5co-gallery-list">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
-						<a href="images/gallery-1.jpg">
-							<div class="case-studies-summary">
-								<span>14 Photos</span>
-								<h2>Two Glas of Juice</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
-						<a href="#" class="color-2">
-							<div class="case-studies-summary">
-								<span>30 Photos</span>
-								<h2>Timer starts now!</h2>
-							</div>
-						</a>
-					</li>
-
-
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
-						<a href="#" class="color-3">
-							<div class="case-studies-summary">
-								<span>90 Photos</span>
-								<h2>Beautiful sunset</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
-						<a href="#" class="color-4">
-							<div class="case-studies-summary">
-								<span>12 Photos</span>
-								<h2>Company's Conference Room</h2>
-							</div>
-						</a>
-					</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
-							<a href="#" class="color-3">
-								<div class="case-studies-summary">
-									<span>50 Photos</span>
-									<h2>Useful baskets</h2>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<span>45 Photos</span>
-									<h2>Skater man in the road</h2>
-								</div>
-							</a>
-						</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<span>35 Photos</span>
-									<h2>Two Glas of Juice</h2>
-								</div>
-							</a>
-						</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
-							<a href="#" class="color-5">
-								<div class="case-studies-summary">
-									<span>90 Photos</span>
-									<h2>Timer starts now!</h2>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
-							<a href="#" class="color-6">
-								<div class="case-studies-summary">
-									<span>56 Photos</span>
-									<h2>Beautiful sunset</h2>
-								</div>
-							</a>
-						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg);"></li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg);"></li>
 					</ul>		
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
+	<div id="fh5co-gift-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box" data-animate-effect="fadeIn">
+					<h2 class="gift-title">Hộp mừng cưới</h2>
+					<p class="gift-subtitle">Cảm ơn tất cả các tình cảm mà mọi người đã dành cho<br><span class="couple-names">Bằng Vũ & Minh Việt</span></p>
+					<div class="gift-icon">
+						<div class="gift-box-clickable" onclick="openGiftModal()">
+							🎁
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Gift Modal -->
+	<div id="gift-modal" class="gift-modal">
+		<div class="gift-modal-content">
+			<span class="gift-close" onclick="closeGiftModal()">&times;</span>
+			<h2 class="gift-modal-title">HỘP MỪNG CƯỚI</h2>
+			<p class="gift-modal-subtitle">Vợ chồng xin cảm ơn tất cả tình cảm của mọi người 🖤</p>
+			
+			<div class="gift-banking-section">
+				<div class="banking-card">
+					<h3>MỪNG CƯỚI ĐẾN CHỦ RỂ</h3>
+					<div class="qr-banking">
+						<img src="images/qr-banking-groom.png" alt="QR Banking Groom">
+					</div>
+					<div class="banking-buttons">
+						<button class="btn-download-qr" onclick="downloadQR('groom')">📥 Tải QR</button>
+						<button class="btn-copy-stk" onclick="copySTK('19038406945012')">📋 Copy STK</button>
+					</div>
+				</div>
+				
+				<div class="banking-card">
+					<h3>MỪNG CƯỚI ĐẾN CÔ DÂU</h3>
+					<div class="qr-banking">
+						<img src="images/qr-banking-bride.png" alt="QR Banking Bride">
+					</div>
+					<div class="banking-buttons">
+						<button class="btn-download-qr" onclick="downloadQR('bride')">📥 Tải QR</button>
+						<button class="btn-copy-stk" onclick="copySTK('80204076931168')">📋 Copy STK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="fh5co-wishes" class="fh5co-wishes-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<h2 class="wishes-title">Lời Chúc</h2>
+					<p class="wishes-subtitle">Cảm ơn mọi người rất nhiều vì đã gửi những lời chúc mừng tốt đẹp nhất đến đám cưới của chúng mình! ❤️</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="wishes-form-container animate-box">
+						<form class="wishes-form" action="https://docs.google.com/forms/d/e/1FAIpQLScG__nzkmFpzncxM8xS3uTnkhGGmtpZ3KVWy4JlM8-A1qBLxg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitWishes(event)">
+							<div class="wishes-form-row">
+								<div class="wishes-input-group">
+									<input type="text" class="wishes-input" name="entry.1977434180" id="guestName" placeholder="Họ và Tên" required>
+								</div>
+								<div class="wishes-input-group">
+									<select class="wishes-select" name="entry.1817587414" id="guestRelation">
+										<option value="">Bạn cô dâu</option>
+										<option value="Bạn chú rể">Bạn chú rể</option>
+										<option value="Bạn cô dâu">Bạn cô dâu</option>
+										<option value="Bạn chung">Bạn chung</option>
+										<option value="Đồng nghiệp">Đồng nghiệp</option>
+										<option value="Người thân">Người thân</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="wishes-textarea-container">
+								<textarea class="wishes-textarea" name="entry.710700708" id="customWish" placeholder="Nhập lời chúc của bạn" rows="4"></textarea>
+								<div class="wishes-emoji-panel">
+									<span class="wishes-emoji" onclick="addEmoji('😊')">😊</span>
+									<span class="wishes-emoji" onclick="addEmoji('❤️')">❤️</span>
+									<span class="wishes-emoji" onclick="addEmoji('🎉')">🎉</span>
+									<span class="wishes-emoji" onclick="addEmoji('💕')">💕</span>
+									<span class="wishes-emoji" onclick="addEmoji('🥂')">🥂</span>
+									<span class="wishes-emoji" onclick="addEmoji('👰')">👰</span>
+									<span class="wishes-emoji" onclick="addEmoji('🤵')">🤵</span>
+									<span class="wishes-emoji" onclick="addEmoji('💒')">💒</span>
+								</div>
+							</div>
+							
+							<div class="wishes-preset-container">
+								<select class="wishes-preset-select" id="presetWish" onchange="selectPresetWish()">
+									<option value="">Nhập lời chúc có sẵn</option>
+									<option value="Chúc hai bạn trăm năm hạnh phúc, bạch đầu giai lão! ❤️">Chúc hai bạn trăm năm hạnh phúc, bạch đầu giai lão! ❤️</option>
+									<option value="Chúc mừng đám cưới! Mong hai bạn luôn yêu thương và hiểu nhau! 💕">Chúc mừng đám cưới! Mong hai bạn luôn yêu thương và hiểu nhau! 💕</option>
+									<option value="Chúc hai bạn có một cuộc sống hôn nhân thật hạnh phúc và viên mãn! 🎉">Chúc hai bạn có một cuộc sống hôn nhân thật hạnh phúc và viên mãn! 🎉</option>
+									<option value="Mong rằng tình yêu của hai bạn sẽ ngày càng bền chặt và lâu dài! 💒">Mong rằng tình yêu của hai bạn sẽ ngày càng bền chặt và lâu dài! 💒</option>
+									<option value="Chúc hai bạn sớm có tin vui, gia đình đầm ấm hạnh phúc! 👶">Chúc hai bạn sớm có tin vui, gia đình đầm ấm hạnh phúc! 👶</option>
+								</select>
+							</div>
+							
+							<button type="submit" class="wishes-submit-btn">
+								Gửi lời chúc cho Dâu Rể
+							</button>
+						</form>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted) {}"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-thank-you" class="fh5co-thank-you-section">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-users"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Estimated Guest</span>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-user"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">We Catter</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Events Done</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-clock"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Hours Spent</span>
-
-							</div>
-						</div>
+				<div class="col-md-12 text-center">
+					<div class="thank-you-content animate-box" data-animate-effect="fadeIn">
+						<h1 class="thank-you-title">Thank you!</h1>
+						<h2 class="thank-you-names">Bằng Vũ & Minh Việt</h2>
+						<p class="thank-you-message">Cảm ơn tất cả mọi người đã dành thời gian quý báu để chúc mừng và chia sẻ niềm vui cùng chúng mình!</p>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-testimonial">
-		<div class="container">
-			<div class="row">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h2>Friends Wishes</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12 animate-box">
-						<div class="wrap-testimony">
-							<div class="owl-carousel-fullwidth">
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-1.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-2.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
-								</div>
-								<div class="item">
-									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-3.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-services" class="fh5co-section-gray">
-		<div class="container">
-			
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>We Offer Services</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6">
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-calendar"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>We Organized Events</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-image"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Photoshoot</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						</div>
-					</div>
-
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						<span class="icon">
-							<i class="icon-video"></i>
-						</span>
-						<div class="feature-copy">
-							<h3>Video Editing</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						</div>
-					</div>
-
-				</div>
-
-				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
-						<div class="overlay"></div>
-					</div>
-				</div>
-			</div>
-
-			
-		</div>
-	</div>
-
-
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
-						</div>
-					</form>
 				</div>
 			</div>
 		</div>
@@ -669,6 +538,402 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+</script>
+
+<script>
+// Gift Modal Functions
+function openGiftModal() {
+    document.getElementById('gift-modal').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeGiftModal() {
+    document.getElementById('gift-modal').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    var modal = document.getElementById('gift-modal');
+    if (event.target == modal) {
+        closeGiftModal();
+    }
+}
+
+// Copy STK function
+function copySTK(accountNumber) {
+    var button = event.target;
+    var originalText = button.textContent;
+    
+    // Try modern clipboard API first
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(accountNumber).then(function() {
+            showCopySuccess(button, originalText);
+        }).catch(function(err) {
+            fallbackCopy(accountNumber, button, originalText);
+        });
+    } else {
+        // Use fallback method
+        fallbackCopy(accountNumber, button, originalText);
+    }
+}
+
+function showCopySuccess(button, originalText) {
+    button.textContent = '✓ Đã copy!';
+    button.style.background = '#27ae60';
+    
+    setTimeout(function() {
+        button.textContent = originalText;
+        button.style.background = '#e74c3c';
+    }, 2000);
+}
+
+function fallbackCopy(accountNumber, button, originalText) {
+    // Create a temporary input element
+    var tempInput = document.createElement('input');
+    tempInput.value = accountNumber;
+    tempInput.style.position = 'fixed';
+    tempInput.style.left = '-9999px';
+    tempInput.style.top = '-9999px';
+    document.body.appendChild(tempInput);
+    
+    // Select and copy the text
+    tempInput.select();
+    tempInput.setSelectionRange(0, 99999); // For mobile devices
+    
+    try {
+        var successful = document.execCommand('copy');
+        if (successful) {
+            showCopySuccess(button, originalText);
+        } else {
+            showCopyPrompt(accountNumber);
+        }
+    } catch (err) {
+        showCopyPrompt(accountNumber);
+    }
+    
+    // Remove the temporary input
+    document.body.removeChild(tempInput);
+}
+
+function showCopyPrompt(accountNumber) {
+    // Create a custom modal for manual copy
+    var copyModal = document.createElement('div');
+    copyModal.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10000;
+    `;
+    
+    var copyContent = document.createElement('div');
+    copyContent.style.cssText = `
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        max-width: 400px;
+        margin: 20px;
+    `;
+    
+    copyContent.innerHTML = `
+        <h3 style="margin-bottom: 20px; color: #e74c3c;">Copy Số Tài Khoản</h3>
+        <p style="margin-bottom: 20px; color: #666;">Vui lòng copy số tài khoản sau:</p>
+        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 20px; font-size: 18px; font-weight: bold; color: #2c3e50; border: 2px dashed #e74c3c;">
+            ${accountNumber}
+        </div>
+        <button onclick="this.parentElement.parentElement.remove()" style="background: #e74c3c; color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-size: 16px;">
+            Đã copy xong
+        </button>
+    `;
+    
+    copyModal.appendChild(copyContent);
+    document.body.appendChild(copyModal);
+    
+    // Close modal when clicking outside
+    copyModal.onclick = function(e) {
+        if (e.target === copyModal) {
+            copyModal.remove();
+        }
+    };
+}
+
+// Download QR function
+function downloadQR(type) {
+    var imageSrc = type === 'groom' ? 'images/qr-banking-groom.png' : 'images/qr-banking-bride.png';
+    var fileName = type === 'groom' ? 'QR-Banking-Chu-Re.png' : 'QR-Banking-Co-Dau.png';
+    
+    // Create a temporary link element
+    var link = document.createElement('a');
+    link.href = imageSrc;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeGiftModal();
+    }
+});
+
+// Floating Menu Functions
+function toggleFloatingMenu() {
+    var floatingMenu = document.querySelector('.floating-menu');
+    var toggleIcon = document.querySelector('.floating-menu-toggle i');
+    
+    if (floatingMenu.classList.contains('active')) {
+        // Close menu
+        floatingMenu.classList.remove('active');
+        toggleIcon.classList.remove('fa-times');
+        toggleIcon.classList.add('fa-bars');
+    } else {
+        // Open menu
+        floatingMenu.classList.add('active');
+        toggleIcon.classList.remove('fa-bars');
+        toggleIcon.classList.add('fa-times');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var floatingMenuItems = document.querySelectorAll('.floating-menu-item');
+    
+    // Handle floating menu item clicks
+    floatingMenuItems.forEach(function(item) {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all items
+            floatingMenuItems.forEach(function(menuItem) {
+                menuItem.classList.remove('active');
+            });
+            
+            // Add active class to clicked item
+            this.classList.add('active');
+            
+            // Close the menu after clicking an item
+            var floatingMenu = document.querySelector('.floating-menu');
+            var toggleIcon = document.querySelector('.floating-menu-toggle i');
+            floatingMenu.classList.remove('active');
+            toggleIcon.classList.remove('fa-times');
+            toggleIcon.classList.add('fa-bars');
+            
+            // Get target section ID
+            var targetId = this.getAttribute('data-target');
+            
+            // Find the target element
+            var target = document.querySelector(targetId);
+            
+            if (target) {
+                // Calculate scroll position
+                var scrollTop = target.offsetTop - 80; // Adjust offset for fixed header
+                
+                // Smooth scroll to target
+                window.scrollTo({
+                    top: scrollTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Update active menu item on scroll
+    function updateActiveMenuItem() {
+        var scrollPos = window.scrollY + 100; // Reduced offset for better detection
+        
+        // Define sections in order
+        var sections = [
+            { id: '#fh5co-header', element: document.querySelector('#fh5co-header') },
+            { id: '#fh5co-event', element: document.querySelector('#fh5co-event') },
+            { id: '#fh5co-location-map', element: document.querySelector('#fh5co-location-map') },
+            { id: '#fh5co-gallery', element: document.querySelector('#fh5co-gallery') },
+            { id: '#fh5co-gift-box', element: document.querySelector('#fh5co-gift-box') },
+            { id: '#fh5co-wishes', element: document.querySelector('#fh5co-wishes') }
+        ];
+        
+        var currentSection = null;
+        
+        // Find the current section based on scroll position
+        for (var i = 0; i < sections.length; i++) {
+            var section = sections[i];
+            if (section.element) {
+                var sectionTop = section.element.offsetTop;
+                var sectionHeight = section.element.offsetHeight;
+                var sectionBottom = sectionTop + sectionHeight;
+                
+                // Check if current scroll position is within this section
+                if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                    currentSection = section.id;
+                    break;
+                }
+            }
+        }
+        
+        // If no section found, default to the first one that's above current scroll
+        if (!currentSection) {
+            for (var i = sections.length - 1; i >= 0; i--) {
+                var section = sections[i];
+                if (section.element && scrollPos >= section.element.offsetTop) {
+                    currentSection = section.id;
+                    break;
+                }
+            }
+        }
+        
+        // Update active menu item
+        if (currentSection) {
+            floatingMenuItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            var activeMenuItem = document.querySelector('.floating-menu-item[data-target="' + currentSection + '"]');
+            if (activeMenuItem) {
+                activeMenuItem.classList.add('active');
+            }
+        }
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        var floatingMenu = document.querySelector('.floating-menu');
+        var toggleButton = document.querySelector('.floating-menu-toggle');
+        
+        // Check if click is outside the floating menu
+        if (!floatingMenu.contains(e.target) && floatingMenu.classList.contains('active')) {
+            var toggleIcon = document.querySelector('.floating-menu-toggle i');
+            floatingMenu.classList.remove('active');
+            toggleIcon.classList.remove('fa-times');
+            toggleIcon.classList.add('fa-bars');
+        }
+    });
+    
+    // Close menu on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            var floatingMenu = document.querySelector('.floating-menu');
+            if (floatingMenu.classList.contains('active')) {
+                var toggleIcon = document.querySelector('.floating-menu-toggle i');
+                floatingMenu.classList.remove('active');
+                toggleIcon.classList.remove('fa-times');
+                toggleIcon.classList.add('fa-bars');
+            }
+        }
+    });
+    
+    // Throttle scroll event for better performance
+    var scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(updateActiveMenuItem, 10);
+    });
+    
+    // Initialize active menu item
+    updateActiveMenuItem();
+    
+    // Change navigation style on scroll
+    window.addEventListener('scroll', function() {
+        var nav = document.querySelector('.fh5co-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+});
+
+// Wishes Form Functions
+window.submitted = false;
+
+function submitWishes(event) {
+    var name = document.getElementById('guestName').value;
+    var relation = document.getElementById('guestRelation').value;
+    var wish = document.getElementById('customWish').value;
+    
+    if (!name.trim()) {
+        event.preventDefault();
+        alert('Vui lòng nhập họ và tên!');
+        return false;
+    }
+    
+    if (!wish.trim()) {
+        event.preventDefault();
+        alert('Vui lòng nhập lời chúc!');
+        return false;
+    }
+    
+    // Show success message
+    var button = event.target.querySelector('.wishes-submit-btn');
+    var originalText = button.textContent;
+    
+    button.textContent = '✓ Đang gửi...';
+    button.disabled = true;
+    window.submitted = true;
+    
+    // Set up success handler
+    setTimeout(function() {
+        button.textContent = '✓ Đã gửi lời chúc!';
+        button.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+        
+        // Reset form after 3 seconds
+        setTimeout(function() {
+            button.textContent = originalText;
+            button.style.background = 'linear-gradient(135deg, #9b7a9b, #8a6b8a)';
+            button.disabled = false;
+            
+            // Reset form
+            document.getElementById('guestName').value = '';
+            document.getElementById('guestRelation').value = '';
+            document.getElementById('customWish').value = '';
+            document.getElementById('presetWish').value = '';
+            
+            // Show thank you message
+            alert('Cảm ơn bạn đã gửi lời chúc! Chúng mình rất vui và biết ơn! 💕');
+            window.submitted = false;
+        }, 3000);
+    }, 1000);
+    
+    // Allow form to submit to Google
+    return true;
+}
+
+function addEmoji(emoji) {
+    var textarea = document.getElementById('customWish');
+    var currentValue = textarea.value;
+    var cursorPosition = textarea.selectionStart;
+    
+    // Insert emoji at cursor position
+    var newValue = currentValue.slice(0, cursorPosition) + emoji + currentValue.slice(cursorPosition);
+    textarea.value = newValue;
+    
+    // Move cursor after the emoji
+    textarea.focus();
+    textarea.setSelectionRange(cursorPosition + emoji.length, cursorPosition + emoji.length);
+}
+
+function selectPresetWish() {
+    var presetSelect = document.getElementById('presetWish');
+    var textarea = document.getElementById('customWish');
+    
+    if (presetSelect.value) {
+        textarea.value = presetSelect.value;
+        textarea.focus();
+        
+        // Reset preset select
+        setTimeout(function() {
+            presetSelect.value = '';
+        }, 500);
+    }
+}
 </script>
 	</body>
 </html>

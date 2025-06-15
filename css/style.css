@@ -1043,8 +1043,6 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .heart {
-    position: static;
-    margin: 30px 0;
     display: block;
     text-align: center;
   }
@@ -1058,11 +1056,7 @@ form label {
   width: 50%;
   float: left;
 }
-@media screen and (max-width: 768px) {
-  .couple-half {
-    width: 100%;
-  }
-}
+
 .couple-half h3 {
   font-family: "Gwendolyn", Arial, serif;
   color: #F14E95;
@@ -1095,6 +1089,20 @@ form label {
     height: 120px;
     margin: 0 auto;
   }
+    .couple-half .groom img {
+        margin-right: 0;
+    }
+    .couple-half .desc-groom h3 {
+        text-align: right;
+        margin-right: 10px;
+    }
+    .couple-half .bride img {
+        margin-left: 0;
+    }
+    .couple-half .desc-bride h3 {
+        text-align: left;
+        margin-left: 10px;
+    }
 }
 .couple-half .groom {
   float: right;
@@ -2566,7 +2574,6 @@ html {
     }
     
     .banking-buttons {
-        flex-direction: column;
         gap: 8px;
     }
 }
@@ -2831,7 +2838,7 @@ html {
 .fh5co-thank-you-section {
     height: 100vh;
     min-height: 600px;
-    background-image: url('../images/img_bg_3.jpg'); /* You can replace this with your couple photo */
+    background-image: url('../images/img_bg_4.jpg'); /* You can replace this with your couple photo */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -2998,7 +3005,6 @@ html {
 
 /* Adjust buttons layout for smaller screens */
 .banking-buttons {
-    flex-direction: column;
     gap: 8px;
 }
 

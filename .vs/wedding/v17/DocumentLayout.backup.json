@@ -13,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\wedding\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\wedding\\css\\icomoon.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\icomoon.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -83,25 +79,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "icomoon.css",
-              "DocumentMoniker": "D:\\wedding\\css\\icomoon.css",
-              "RelativeDocumentMoniker": "css\\icomoon.css",
-              "ToolTip": "D:\\wedding\\css\\icomoon.css",
-              "RelativeToolTip": "css\\icomoon.css",
-              "ViewState": "AgIAAJUDAAAAAAAAAAAcwL4DAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-11T16:51:11.208Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "style.css",
               "DocumentMoniker": "D:\\wedding\\css\\style.css",
               "RelativeDocumentMoniker": "css\\style.css",
               "ToolTip": "D:\\wedding\\css\\style.css",
               "RelativeToolTip": "css\\style.css",
-              "ViewState": "AgIAANUHAAAAAAAAAAAtwOUHAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAN4DAAAAAAAAAAAAAPYDAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-11T16:38:41.575Z",
               "EditorCaption": ""
@@ -114,7 +98,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "D:\\wedding\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFMAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAAMEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-06-11T07:29:58.03Z",
               "EditorCaption": ""

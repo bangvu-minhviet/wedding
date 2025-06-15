@@ -363,10 +363,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   width: 100%;
 }
-#fh5co-counter .fh5co-heading h2,
-#fh5co-event .fh5co-heading h2 {
-  color: #fff;
-}
+
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
   color: rgba(255, 255, 255, 0.5);
@@ -990,7 +987,6 @@ form label {
 #fh5co-testimonial,
 #fh5co-services,
 #fh5co-started,
-#fh5co-footer,
 #fh5co-event,
 #fh5co-couple-story,
 #fh5co-couple,
@@ -1003,7 +999,6 @@ form label {
   #fh5co-testimonial,
   #fh5co-services,
   #fh5co-started,
-  #fh5co-footer,
   #fh5co-event,
   #fh5co-couple-story,
   #fh5co-couple,
@@ -1014,7 +1009,7 @@ form label {
 }
 
 .fh5co-section-gray {
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(255, 200, 200, 0.1);
 }
 
 .couple-wrap {
@@ -1048,7 +1043,14 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .heart {
-    display: none;
+    position: static;
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+  }
+  .heart i {
+    font-size: 18px;
+    padding: 18px;
   }
 }
 
@@ -1170,24 +1172,31 @@ form label {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  font-size: 4.5em;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
-  font-family: "Gwendolyn", Arial, serif;
+  color: #2f2f2f;
+  font-family: "Twinkle Star", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
-    font-size: 50px;
+    font-size: 3.5em;
   }
 }
+
+@media screen and (max-width: 480px) {
+    .fh5co-heading h2 {
+        font-size: 2.8em;
+    }
+}
+
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
@@ -1982,18 +1991,18 @@ form label {
 }
 
 .margin-event h2 {
-    font-size: 90px;
+    font-size: 4.5em;
 }
 
 @media screen and (max-width: 768px) {
     .margin-event h2 {
-        font-size: 70px;
+        font-size: 3.5em;
     }
 }
 
 @media screen and (max-width: 480px) {
     .margin-event h2 {
-        font-size: 50px;
+        font-size: 2.8em;
     }
 }
 
@@ -2203,9 +2212,8 @@ html {
 }
 
 #fh5co-location-map .fh5co-heading h2 {
-    font-family: 'Gwendolyn', cursive;
-    font-size: 4em;
-    color: #DC143C;
+    font-family: "Twinkle Star", Arial, serif;
+    font-size: 4.5em;
     margin-top: 80px;
 }
 
@@ -2257,7 +2265,7 @@ html {
     }
     
     #fh5co-location-map .fh5co-heading h2 {
-        font-size: 3em;
+        font-size: 3.5em;
         margin-bottom: 40px;
     }
     
@@ -2269,7 +2277,7 @@ html {
 
 @media screen and (max-width: 480px) {
     #fh5co-location-map .fh5co-heading h2 {
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin-bottom: 30px;
     }
     
@@ -2295,9 +2303,8 @@ html {
 }
 
 .gift-title {
-    font-family: 'Gwendolyn', cursive;
+    font-family: "Twinkle Star", Arial, serif;
     font-size: 4.5em;
-    color: #2c3e50;
     margin-bottom: 30px;
     font-weight: 700;
 }
@@ -2383,7 +2390,7 @@ html {
 }
 
 .gift-modal-title {
-    font-family: 'Gwendolyn', cursive;
+    font-family: "Twinkle Star", Arial, serif;
     font-size: 3em;
     color: #e74c3c;
     text-align: center;
@@ -2567,16 +2574,15 @@ html {
 /* Wishes Form Section Styles */
 .fh5co-wishes-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #e8d5e8 0%, #d4b9d4 50%, #c4a8c4 100%);
+    background: rgba(255, 200, 200, 0.1);
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .wishes-title {
-    font-family: 'Gwendolyn', cursive;
+    font-family: "Twinkle Star", Arial, serif;
     font-size: 4.5em;
-    color: #2c3e50;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -2857,7 +2863,7 @@ html {
 }
 
 .thank-you-title {
-    font-family: 'Gwendolyn', cursive;
+    font-family: "Twinkle Star", Arial, serif;
     font-size: 6em;
     font-weight: 700;
     color: #fff;
@@ -2936,4 +2942,109 @@ html {
     .thank-you-content {
         padding: 25px 10px;
     }
+
+}
+
+
+/* Mobile-specific Gift Modal styles */
+@media screen and (max-width: 480px) {
+    /* Make modal content smaller and better adapted for mobile */
+    .gift-modal-content
+
+{
+    width: 95%;
+    max-width: 95%;
+    margin: 10% auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Reduce title size */
+.gift-modal-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Reduce subtitle size */
+.gift-modal-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Stack banking cards vertically */
+.gift-banking-section {
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Make banking cards more compact */
+.banking-card {
+    padding: 15px;
+    min-width: auto;
+}
+
+    /* Reduce heading size in banking cards */
+    .banking-card h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+/* Make QR codes smaller */
+.qr-banking img {
+    max-width: 130px;
+    max-height: 130px;
+}
+
+/* Adjust buttons layout for smaller screens */
+.banking-buttons {
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Make buttons smaller */
+.btn-download-qr, .btn-copy-stk {
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+/* Adjust close button position */
+.gift-close {
+    right: 15px;
+    top: 10px;
+    font-size: 28px;
+}
+
+}
+
+/* Tablet-specific Gift Modal styles */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .gift-modal-content {
+        width: 90%;
+        max-width: 500px;
+        margin: 8% auto;
+        padding: 20px;
+    }
+
+    .gift-modal-title {
+        font-size: 2.5em;
+    }
+
+    .gift-banking-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .qr-banking img {
+        max-width: 160px;
+        max-height: 160px;
+    }
+}
+
+.image-cl {
+    background: rgba(255, 200, 200, 0.1);
+}
+
+.fh5co-heading h3{
+    font-size: 1.3em;
 }

@@ -2710,7 +2710,7 @@ html {
 .wishes-submit-btn {
     width: 100%;
     padding: 18px 30px;
-    background: linear-gradient(135deg, #9b7a9b, #8a6b8a);
+    background: rgba(255, 200, 200, 0.7);
     color: white;
     border: none;
     border-radius: 25px;
@@ -2722,7 +2722,7 @@ html {
 }
 
 .wishes-submit-btn:hover {
-    background: linear-gradient(135deg, #8a6b8a, #7a5a7a);
+    background: rgba(255, 200, 200, 1);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
 }
@@ -2800,7 +2800,7 @@ html {
     }
     
     .wishes-subtitle {
-        font-size: 14px;
+        font-size: 15.1px;
     }
     
     .wishes-form-container {
@@ -2956,70 +2956,68 @@ html {
 /* Mobile-specific Gift Modal styles */
 @media screen and (max-width: 480px) {
     /* Make modal content smaller and better adapted for mobile */
-    .gift-modal-content
-
-{
-    width: 95%;
-    max-width: 95%;
-    margin: 10% auto;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-/* Reduce title size */
-.gift-modal-title {
-    font-size: 2em;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-/* Reduce subtitle size */
-.gift-modal-subtitle {
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* Stack banking cards vertically */
-.gift-banking-section {
-    flex-direction: column;
-    gap: 15px;
-}
-
-/* Make banking cards more compact */
-.banking-card {
-    padding: 15px;
-    min-width: auto;
-}
-
-    /* Reduce heading size in banking cards */
-    .banking-card h3 {
-        font-size: 15px;
-        margin-bottom: 15px;
+    .gift-modal-content {
+        width: 95%;
+        max-width: 95%;
+        margin: 10% auto;
+        padding: 15px;
+        border-radius: 10px;
     }
 
-/* Make QR codes smaller */
-.qr-banking img {
-    max-width: 130px;
-    max-height: 130px;
-}
+    /* Reduce title size */
+    .gift-modal-title {
+        font-size: 2em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 
-/* Adjust buttons layout for smaller screens */
-.banking-buttons {
-    gap: 8px;
-}
+    /* Reduce subtitle size */
+    .gift-modal-subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
 
-/* Make buttons smaller */
-.btn-download-qr, .btn-copy-stk {
-    padding: 10px 15px;
-    font-size: 13px;
-}
+    /* Stack banking cards vertically */
+    .gift-banking-section {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-/* Adjust close button position */
-.gift-close {
-    right: 15px;
-    top: 10px;
-    font-size: 28px;
-}
+    /* Make banking cards more compact */
+    .banking-card {
+        padding: 15px;
+        min-width: auto;
+    }
+
+        /* Reduce heading size in banking cards */
+        .banking-card h3 {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+    /* Make QR codes smaller */
+    .qr-banking img {
+        max-width: 130px;
+        max-height: 130px;
+    }
+
+    /* Adjust buttons layout for smaller screens */
+    .banking-buttons {
+        gap: 8px;
+    }
+
+    /* Make buttons smaller */
+    .btn-download-qr, .btn-copy-stk {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    /* Adjust close button position */
+    .gift-close {
+        right: 15px;
+        top: 10px;
+        font-size: 28px;
+    }
 
 }
 
@@ -3053,4 +3051,13 @@ html {
 
 .fh5co-heading h3{
     font-size: 1.3em;
+}
+
+/* ---------------------- Custom adjustments ---------------------- */
+.fh5co-thank-you-section {
+    align-items: flex-end;
+}
+
+.thank-you-content {
+    margin-bottom: 60px; /* spacing from bottom */
 }

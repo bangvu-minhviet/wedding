@@ -184,7 +184,7 @@
 			<div class="row">
 				<div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
 					<div class="d-flex justify-content-center">
-						<img src="images/nha_trai.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="nha_gai">
+						<img src="images/nha_gai.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="nha_gai">
 					</div>
 				</div>
 				<div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
@@ -194,7 +194,7 @@
 				</div>
 				<div class="col-lg-4 d-flex justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.3s">
 					<div class="d-flex justify-content-center">
-						<img src="images/nha_gai.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="nha_trai">
+						<img src="images/nha_trai.png" class="img-fluid rounded mb-3 mb-sm-0" style="max-width: 350px; height: auto;" alt="nha_trai">
 					</div>
 				</div>
 			</div>
@@ -336,9 +336,9 @@
 								</div>
 								<div class="wishes-input-group">
 									<select class="wishes-select" name="entry.1817587414" id="guestRelation">
-										<option value="">Bạn cô dâu</option>
-										<option value="Bạn chú rể">Bạn chú rể</option>
 										<option value="Bạn cô dâu">Bạn cô dâu</option>
+										<option value="Bạn chú rể">Bạn chú rể</option>
+										<option value="Khách mời của ba mẹ">Khách mời của ba mẹ</option>
 										<option value="Bạn chung">Bạn chung</option>
 										<option value="Đồng nghiệp">Đồng nghiệp</option>
 										<option value="Người thân">Người thân</option>
@@ -363,7 +363,7 @@
 							<div class="wishes-preset-container">
 								<select class="wishes-preset-select" id="presetWish" onchange="selectPresetWish()">
 									<option value="">Nhập lời chúc có sẵn</option>
-									<option value="Chúc hai bạn trăm năm hạnh phúc, bạch đầu giai lão! ❤️">Chúc hai bạn trăm năm hạnh phúc, bạch đầu giai lão! ❤️</option>
+									<option value="Chúc hai bạn trăm năm hạnh phúc, bách niên giai lão! ❤️">Chúc hai bạn trăm năm hạnh phúc, bách niên giai lão! ❤️</option>
 									<option value="Chúc mừng đám cưới! Mong hai bạn luôn yêu thương và hiểu nhau! 💕">Chúc mừng đám cưới! Mong hai bạn luôn yêu thương và hiểu nhau! 💕</option>
 									<option value="Chúc hai bạn có một cuộc sống hôn nhân thật hạnh phúc và viên mãn! 🎉">Chúc hai bạn có một cuộc sống hôn nhân thật hạnh phúc và viên mãn! 🎉</option>
 									<option value="Mong rằng tình yêu của hai bạn sẽ ngày càng bền chặt và lâu dài! 💒">Mong rằng tình yêu của hai bạn sẽ ngày càng bền chặt và lâu dài! 💒</option>
@@ -387,7 +387,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<div class="thank-you-content animate-box" data-animate-effect="fadeIn">
+					<div class="thank-you-content animate-box" data-animate-effect="fadeIn" style="margin-top: 120px;">
 						<h1 class="thank-you-title">Thank you!</h1>
 						<h2 class="thank-you-names">Bằng Vũ & Minh Việt</h2>
 					</div>
@@ -878,7 +878,7 @@ function submitWishes(event) {
         // Reset form after 3 seconds
         setTimeout(function() {
             button.textContent = originalText;
-            button.style.background = 'linear-gradient(135deg, #9b7a9b, #8a6b8a)';
+            button.style.background = '';
             button.disabled = false;
             
             // Reset form

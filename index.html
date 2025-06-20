@@ -471,16 +471,51 @@ $(function() {
 <script>
 	function createHeart() {
 		const heart = document.createElement('div');
-		heart.className = 'falling-heart';
-		heart.innerHTML = '<i class="icon-heart2"></i>'; // Uses your existing icon font
+		
+		// Randomly choose between three colors
+		const colors = ['red', 'orange', 'pink'];
+		const randomColor = colors[Math.floor(Math.random() * colors.length)];
+		
+		// Randomly choose animation style
+		const animationStyles = ['', 'spin', 'bounce'];
+		const randomStyle = animationStyles[Math.floor(Math.random() * animationStyles.length)];
+		
+		// Randomly choose speed variation
+		const speedStyles = ['', 'slow', 'fast'];
+		const randomSpeed = speedStyles[Math.floor(Math.random() * speedStyles.length)];
+		
+		// Randomly choose opacity variation
+		const opacityStyles = ['', 'fade', 'bright'];
+		const randomOpacity = opacityStyles[Math.floor(Math.random() * opacityStyles.length)];
+		
+		// Combine all classes
+		const allClasses = ['falling-heart', randomColor, randomStyle, randomSpeed, randomOpacity].filter(Boolean);
+		heart.className = allClasses.join(' ');
+		
+		heart.innerHTML = '<i class="icon-heart2"></i>';
 		heart.style.left = Math.random() * 100 + 'vw';
-		heart.style.animationDuration = (2 + Math.random() * 3) + 's'; // 2-5 seconds
-		heart.style.fontSize = (16 + Math.random() * 32) + 'px'; // 16-48px
+		
+		// Only set custom duration if no speed class is applied
+		if (!randomSpeed) {
+			heart.style.animationDuration = (2 + Math.random() * 3) + 's';
+		}
+		
+		// Random size with more variation
+		const size = 12 + Math.random() * 40; // 12-52px
+		heart.style.fontSize = size + 'px';
+		
+		// Random starting position (some hearts start from different heights)
+		if (Math.random() > 0.8) { // 20% chance
+			heart.style.top = (-20 - Math.random() * 30) + 'px';
+		}
+		
 		document.body.appendChild(heart);
 
+		// Remove heart after animation (longer duration for slower animations)
+		const removeTime = randomSpeed === 'slow' ? 7000 : randomSpeed === 'fast' ? 3000 : 5000;
 		setTimeout(() => {
 			heart.remove();
-		}, 5000);
+		}, removeTime);
 	}
 
 	setInterval(createHeart, 400); // Create a heart every 400ms

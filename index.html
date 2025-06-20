@@ -145,11 +145,18 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Lời chào</h2>
-					<h3>Chân thành cảm ơn bạn đã dành sự quan tâm và tình cảm cho hai vợ chồng mình. 
-					Mình hiểu rằng ai cũng có những bận rộn riêng – công việc, cuộc sống và gia đình. 
-					Chính vì thế, nếu bạn và người thương có thể dành thời gian tham dự ngày trọng đại của vợ chồng mình, thì đó thực sự sẽ là niềm vinh hạnh và niềm vui lớn lao. 
-					Mong rằng bạn có thể hiện diện trong khoảnh khắc đặc biệt ấy, để cùng chúng mình lưu giữ những kỷ niệm ý nghĩa và hạnh phúc. 
-					Một lần nữa, xin gửi lời cảm ơn sâu sắc đến tất cả mọi người.</h3>
+					<div class="welcome-decoration">
+						<span class="decoration-line"></span>
+						<i class="icon-heart2"></i>
+						<span class="decoration-line"></span>
+					</div>
+					<div class="welcome-message">
+						<p class="welcome-text">Chân thành cảm ơn bạn đã dành sự quan tâm và tình cảm cho hai vợ chồng mình.</p>
+						<p class="welcome-text">Mình hiểu rằng ai cũng có những bận rộn riêng – công việc, cuộc sống và gia đình.</p>
+						<p class="welcome-text">Chính vì thế, nếu bạn và người thương có thể dành thời gian tham dự ngày trọng đại của vợ chồng mình, thì đó thực sự sẽ là niềm vinh hạnh và niềm vui lớn lao.</p>
+						<p class="welcome-text">Mong rằng bạn có thể hiện diện trong khoảnh khắc đặc biệt ấy, để cùng chúng mình lưu giữ những kỷ niệm ý nghĩa và hạnh phúc.</p>
+						<p class="welcome-text">Một lần nữa, xin gửi lời cảm ơn sâu sắc đến tất cả mọi người.</p>
+					</div>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -440,24 +447,6 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
-<script>
 $(function() {
     var total = $('.header-slider .slide').length;
     var current = 0;

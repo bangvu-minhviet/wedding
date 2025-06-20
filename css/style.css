@@ -1551,14 +1551,15 @@ form label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #F14E95, #f97c3e);
   color: #fff;
   text-align: center;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(241, 78, 149, 0.3);
 }
 .gototop a i {
   font-size: 18px;
@@ -1566,7 +1567,9 @@ form label {
 .gototop a:hover, .gototop a:active, .gototop a:focus {
   text-decoration: none;
   outline: none;
-  background: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, #f97c3e, #F14E95);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(241, 78, 149, 0.4);
 }
 
 .fh5co-nav-toggle {
@@ -1839,7 +1842,25 @@ form label {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fh5co-loader::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #F14E95;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .js .animate-box {
@@ -3152,4 +3173,113 @@ html {
 
 .thank-you-content {
     margin-bottom: 60px; /* spacing from bottom */
+}
+
+/* Countdown Section Styles */
+#fh5co-countdown {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+}
+
+#fh5co-countdown .fh5co-heading h2 {
+    font-family: "Twinkle Star", Arial, serif;
+    font-size: 4.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#fh5co-countdown .fh5co-heading p {
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Welcome Message Improvements */
+.welcome-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.decoration-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #F14E95, transparent);
+}
+
+.welcome-decoration i {
+    color: #F14E95;
+    font-size: 24px;
+    animation: pulse 2s infinite;
+}
+
+.welcome-message {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.welcome-text:last-child {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #F14E95;
+    text-align: center;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    #fh5co-countdown {
+        padding: 60px 0;
+    }
+    
+    #fh5co-countdown .fh5co-heading h2 {
+        font-size: 3.5em;
+    }
+    
+    #fh5co-countdown .fh5co-heading p {
+        font-size: 18px;
+    }
+    
+    .welcome-text {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .decoration-line {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #fh5co-countdown .fh5co-heading h2 {
+        font-size: 2.8em;
+    }
+    
+    #fh5co-countdown .fh5co-heading p {
+        font-size: 16px;
+    }
+    
+    .welcome-text {
+        font-size: 15px;
+    }
+    
+    .decoration-line {
+        width: 30px;
+    }
+    
+    .welcome-decoration {
+        gap: 15px;
+    }
 }

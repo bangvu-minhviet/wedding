@@ -847,6 +847,13 @@ form label {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 1024px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 {
+    font-size: 60px;
+  }
+}
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
@@ -2352,14 +2359,17 @@ html {
     display: inline-block;
     border: 5px solid #DC143C;
     border-radius: 20px;
-    padding: 30px;
+    padding: 15px;
     background-color: white;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
 }
 
 .qr-code-container img {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -2372,11 +2382,10 @@ html {
         font-size: 3.5em;
         margin-bottom: 40px;
     }
-    
-    .qr-code-container img {
-        width: 220px;
-        height: 220px;
-    }
+}
+
+@media screen and (max-width: 900px) {
+
 }
 
 @media screen and (max-width: 480px) {
@@ -2387,11 +2396,6 @@ html {
     
     .qr-code-container {
         padding: 20px;
-    }
-    
-    .qr-code-container img {
-        width: 180px;
-        height: 180px;
     }
     
     .location-heading {
@@ -2539,8 +2543,7 @@ html {
 
 .qr-banking img {
     max-width: 200px;
-    max-height: 200px;
-    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -2623,6 +2626,13 @@ html {
     .qr-banking img {
         max-width: 180px;
         max-height: 180px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .qr-banking img {
+        max-width: 190px;
+        max-height: 190px;
     }
 }
 
